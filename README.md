@@ -34,3 +34,7 @@ networks:
   example:
     driver: bridge
 ```
+
+## Disclaimer
+
+This template can have some failures as it's only a first version, as such any issue or feedback is welcomed and appreciated! 
