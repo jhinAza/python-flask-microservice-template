@@ -1,0 +1,7 @@
+version: '2'
+services:
+  {{cookiecutter.project}}:
+    build: .
+    restart: always
+    ports:
+      - {{cookiecutter.port}}:{{cookiecutter.port}}
