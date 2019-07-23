@@ -3,5 +3,6 @@
   "project_slug": "default",
   "mantainer_name": "Julian Diez",
   "mantainer_email": "juliand1993@gmail.com",
-  "port": 8000
+  "port": 8000,
+  "test_suite": ["unittest", "pytest"]
 }

@@ -39,8 +39,13 @@ clean-test: ## remove test and coverage artifacts
 	rm -f .coverage
 	rm -fr htmlcov/
 
+{% if cookiecutter.test_suite == 'unittest' %}
 test: ## run tests quickly using unittest
 	PYTHONPATH=. python -m unittest discover tests
+{% else %}
+test: ## run tests quickly using unittest
+	PYTHONPATH=. python -m pytest tests
+{% endif %}
 
 coverage: ## check code coverage quickly with the default Python
 	PYTHONPATH=. coverage run --source=. -m unittest discover tests
